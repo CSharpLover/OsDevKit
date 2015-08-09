@@ -152,16 +152,17 @@ namespace OsDevKit.UI
                     }
                     else
                     {
-                        File.Create(p);
+                        File.WriteAllText(p," ");
                     }
                 }
-                Global.Save();
-                buffer = null;
+
             }
             catch (Exception ee)
             {
 
             }
+            Global.Save();
+            buffer = null;
         }
 
 
